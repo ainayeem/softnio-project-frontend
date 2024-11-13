@@ -18,7 +18,7 @@ const CustomerReview = () => {
         <div className="xl:absolute xl:-left-40 hidden xl:block">
           <img className="size-72" src={tamato} alt="" />
         </div>
-        <div className="xl:absolute xl:-right-10 xl:bottom-10 hidden xl:block">
+        <div className="xl:absolute xl:-right-0 xl:bottom-10 hidden xl:block">
           <img className="size-72" src={salad} alt="" />
         </div>
         <div className="max-w-screen-xl xl:mx-auto mx-8">
@@ -48,9 +48,8 @@ const CustomerReview = () => {
             spaceBetween={30}
             slidesPerView={1}
             loop={true}
-            //   centeredSlides={true}
             autoplay={{
-              //   delay: 50000000000000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             navigation={{
@@ -62,18 +61,18 @@ const CustomerReview = () => {
           >
             <SwiperSlide>
               <div className="roboto">
-                <div className="grid xl:grid-cols-2">
+                <div className="xl:flex xl:flex-row-reverse">
                   <img className="border-none" src={muttonKacchi} alt="" />
-                  <div className="bg-custom-yellow p-6 relative border-none">
+                  <div className="bg-custom-yellow p-20 relative border-none ">
                     <img
                       className="absolute bottom-0 -left-0"
                       src={halfPattern}
                       alt=""
                     />
-                    <div className="flex flex-col justify-end">
-                      <div className="flex">
-                        <p className="text-xl ml-4">
-                          “You can&apos;t go wrong with Chicken Mandi, I had it
+                    <div className="flex flex-col justify-between h-full">
+                      <div className="">
+                        <p className="text-xl ml-4 line-clamp-5 overflow-hidden text-ellipsis">
+                          “You can not go wrong with Chicken Mandi, I had it
                           twice. The chicken was cooked perfectly, juicy & soft
                           (usually mandi chicken is a bit dry). I would
                           defiantly recommend it.
@@ -82,9 +81,7 @@ const CustomerReview = () => {
                       <div className="pb-16">
                         <div className="flex justify-between mt-10">
                           <div className="">
-                            <h1 className="text-xl font-bold">
-                              KHALID AL DAWSRY
-                            </h1>
+                            <h1 className="text-xl font-bold">ATIF ISLAM</h1>
                             <p>Jeddah, Saudi</p>
                           </div>
                           <div>
@@ -103,29 +100,25 @@ const CustomerReview = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="roboto">
-                <div className="grid xl:grid-cols-2">
+                <div className="xl:flex xl:flex-row-reverse">
                   <img className="border-none" src={muttonKacchi} alt="" />
-                  <div className="bg-custom-yellow p-6 relative border-none">
+                  <div className="bg-custom-yellow p-20 relative border-none ">
                     <img
                       className="absolute bottom-0 -left-0"
                       src={halfPattern}
                       alt=""
                     />
-                    <div className="flex flex-col justify-end">
-                      <div>
-                        <p className="text-xl ml-4">
-                          “You can&apos;t go wrong with Chicken Mandi, I had it
-                          twice. The chicken was cooked perfectly, juicy & soft
-                          (usually mandi chicken is a bit dry). I would
-                          defiantly recommend it.
+                    <div className="flex flex-col justify-between h-full">
+                      <div className="">
+                        <p className="text-xl ml-4 line-clamp-5 overflow-hidden text-ellipsis">
+                          “Each dish was a masterpiece, bursting with flavor and
+                          presented beautifully. I would defiantly recommend it.
                         </p>
                       </div>
-                      <div className=" pb-16">
+                      <div className="pb-16">
                         <div className="flex justify-between mt-10">
                           <div className="">
-                            <h1 className="text-xl font-bold">
-                              KHALID AL DAWSRY
-                            </h1>
+                            <h1 className="text-xl font-bold">ATIF ISLAM</h1>
                             <p>Jeddah, Saudi</p>
                           </div>
                           <div>
@@ -143,40 +136,6 @@ const CustomerReview = () => {
               </div>
             </SwiperSlide>
           </Swiper>
-
-          {/* newb */}
-          {/* <div className="roboto">
-            <div className="grid xl:grid-cols-2">
-              <img className="" src={muttonKacchi} alt="" />
-              <div className="bg-custom-yellow p-6">
-                <div className="flex flex-col justify-end">
-                  <div>
-                    <p className="text-xl ml-4">
-                      “You can&apos;t go wrong with Chicken Mandi, I had it
-                      twice. The chicken was cooked perfectly, juicy & soft
-                      (usually mandi chicken is a bit dry). I would defiantly
-                      recommend it.
-                    </p>
-                  </div>
-                  <div className="bg-red-600">
-                    <div className="flex justify-between mt-10">
-                      <div className="">
-                        <h1 className="text-xl font-bold">KHALID AL DAWSRY</h1>
-                        <p>Jeddah, Saudi</p>
-                      </div>
-                      <div>
-                        <img src={customarProfile} alt="" />
-                      </div>
-                    </div>
-                    <div className="flex justify-end">
-                      <div className="h-1 w-10 bg-[#BD1F17]"></div>
-                    </div>
-                    <div className="h-0.5 w-full bg-[#0A1425] mx-auto"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
           {/* ================================================================== */}
           <div className="xl:flex  xl:justify-between  xl:[120px]">

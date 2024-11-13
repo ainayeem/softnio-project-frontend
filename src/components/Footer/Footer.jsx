@@ -14,7 +14,7 @@ const Footer = () => {
       className="w-full h-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${footerImg})` }}
     >
-      <div className="bg-black bg-opacity-60">
+      <div className="bg-black bg-opacity-80">
         <div className="max-w-screen-xl xl:mx-auto mx-8 py-8 text-center text-white">
           <h1 className="uppercase text-5xl text-white mb-12">
             we ready to have you the best dining experiences
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center gap-4 mb-4">
+          <div className="flex justify-center gap-4 mb-4 mt-20">
             <img className="size-9" src={fb} alt="" />
             <img className="size-9" src={xlink} alt="" />
             <img className="size-9" src={ig} alt="" />

@@ -6,10 +6,12 @@ import CustomerReview from "./components/CustomerReview/CustomerReview";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import PopularFood from "./components/PopularFood/PopularFood";
+import { Toaster } from "sonner";
 
 function App() {
   return (
     <>
+      <Toaster />
       <Nav></Nav>
       <Banner></Banner>
       <About></About>

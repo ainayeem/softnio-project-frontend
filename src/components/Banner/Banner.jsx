@@ -12,7 +12,7 @@ const Banner = () => {
       >
         <div className="xl:max-w-screen-xl xl:mx-auto grid xl:grid-cols-2 grid-cols-1  mx-8">
           <div className="relative flex flex-col justify-center text-white">
-            <div className="xl:bg-red-500 xl:bg-opacity-30 xl:w-[130%] xl:z-10 border xl:border-black border-none">
+            <div className="xl:bg-red-500 xl:bg-opacity-30 xl:w-[130%] xl:z-10 xl:border xl:border-black">
               <p className="xl:text-[120px] text-[48px] xl:leading-[130px] uppercase">
                 taste the authentic
                 <br />
