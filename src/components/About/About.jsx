@@ -21,7 +21,7 @@ const About = () => {
             />
           </div>
           <div className="absolute top-5 left-0">
-            <img className="h-[73px]" src={marketExp} alt="" />
+            <img className="h-[73px] xl:h-32" src={marketExp} alt="" />
           </div>
         </div>
 
@@ -140,7 +140,7 @@ const About = () => {
           </div>
         </div>
         {/* item 2 */}
-        <div className="flex items-center ">
+        <div className="flex items-center mb-8">
           <div className=" rounded-full shadow-lg p-6 mr-4">
             <img src={pickupDelivery} alt="" />
           </div>
