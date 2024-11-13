@@ -26,7 +26,7 @@ const Nav = () => {
     <div className="xl:max-w-screen-xl xl:mx-auto">
       <div className="">
         <div className="navbar fixed z-10 bg-opacity-30 xl:max-w-screen-xl text-white ml-8 xl:ml-0">
-          <div className="xl:navbar-start ">
+          <div className="xl:navbar-start">
             <img src={logoIcon} alt="" />
             <a className="ml-2 text-xl roboto">Restuarent</a>
             <div className=" hidden lg:flex">
@@ -41,7 +41,7 @@ const Nav = () => {
           </div>
 
           <div className="navbar-end lg:hidden">
-            <div className="dropdown w-full">
+            <div className="dropdown w-full z-50">
               <div className="flex justify-end">
                 <div
                   tabIndex={0}
@@ -64,10 +64,10 @@ const Nav = () => {
                   </svg>
                 </div>
               </div>
-              <div className="mr-4">
+              <div className="mr-4 z-20">
                 <ul
                   tabIndex={0}
-                  className="menu dropdown-content  rounded z-[1] mt-3  shadow text-white bg-red-500 bg-opacity-50 roboto w-56"
+                  className="menu dropdown-content  rounded z-[1] mt-3  shadow text-white bg-red-300 bg-opacity-30 backdrop-blur-md roboto w-56"
                 >
                   {navValue}
                 </ul>

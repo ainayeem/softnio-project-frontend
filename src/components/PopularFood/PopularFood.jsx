@@ -2,6 +2,7 @@ import leftArrow from "../../assets/icons/left arrow.png";
 import rightArrow from "../../assets/icons/right arrow.png";
 import burger from "../../assets/images/burger.png";
 import pizza from "../../assets/images/pizza.png";
+import capsicum from "../../assets/images/capsicum.png";
 import frenchFry from "../../assets/images/french-fries.png";
 import shrimp from "../../assets/images/fried-shrimp-prawn-cake-white-plate.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,16 +13,19 @@ import "swiper/css/navigation";
 
 const PopularFood = () => {
   return (
-    <div className="bg-custom-offwhite xl:pb-28">
+    <div className="bg-custom-offwhite xl:pb-28 relative">
+      <div className="xl:absolute xl:left-0 top-60 hidden xl:block">
+        <img className="" src={capsicum} alt="" />
+      </div>
       <div className="max-w-screen-xl xl:mx-auto mx-8">
         {/* first part */}
         <div className="">
           <div className="xl:pt-[120px] pt-8 xl:pb-[60px] xl:flex justify-between items-center">
             <div>
-              <p className="text-[#BD1F17] xl:font-bold">
+              <p className="text-[#BD1F17] xl:font-bold roboto mb-3">
                 &#9642; Crispy, Every Bite Taste
               </p>
-              <h1 className="uppercase text-5xl">popular food items</h1>
+              <h1 className="uppercase text-5xl mb-4">popular food items</h1>
             </div>
             <div className="hidden xl:flex ">
               <div className="h-[60px] w-[60px] bg-white flex items-center justify-center rounded-full shadow-md mr-8 custom-swiper-prev cursor-pointer">

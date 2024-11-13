@@ -4,10 +4,14 @@ import callAlt from "../../assets/icons/call-alt.png";
 import fastDelivery from "../../assets/icons/Fast Delivery.png";
 import absoluteDining from "../../assets/icons/Absolute Dining.png";
 import pickupDelivery from "../../assets/icons/Pickup Delivery.png";
+import bowlSalad from "../../assets/images/bowl-salad.png";
 const About = () => {
   return (
     <>
       <div className="xl:mt-[120px] grid xl:grid-cols-2 max-w-screen-xl xl:mx-auto mx-8 mt-8">
+        <div className="xl:absolute xl:right-0 hidden xl:block">
+          <img className="" src={bowlSalad} alt="" />
+        </div>
         <div className="relative">
           <div>
             <img
@@ -17,18 +21,19 @@ const About = () => {
             />
           </div>
           <div className="absolute top-5 left-0">
-            <img className="w-[128px] h-[73px]" src={marketExp} alt="" />
+            <img className="h-[73px]" src={marketExp} alt="" />
           </div>
         </div>
 
         {/* tab   */}
-        <div className=" ">
+        <div className="relative">
+          <div className="absolute top-7 h-1 w-full bg-[#BD1F17] mx-auto"></div>
           <div role="tablist" className="tabs tabs-bordered">
             <input
               type="radio"
               name="my_tabs_1"
               role="tab"
-              className="tab roboto"
+              className="tab roboto text-black checked:bg-[#B52B1D] checked:text-white"
               aria-label="About"
               defaultChecked
             />
@@ -37,13 +42,10 @@ const About = () => {
                 Exceptional culinary experience and delicious food
               </h1>
               <p className="roboto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-                voluptatibus alias laudantium atque earum pariatur vero
-                inventore excepturi delectus nemo? Optio, cupiditate ducimus
-                facilis, quia repellendus veniam perferendis eaque eligendi
-                dolorum quibusdam nemo. Eum quod reprehenderit amet, iste rem
-                nihil veritatis at magni qui ipsa eos necessitatibus recusandae
-                quae et?
+                An exceptional culinary journey that delights every sense, where
+                flavors are artfully crafted and beautifully presented. Each
+                dish tells a story, blending tradition with innovation. Truly
+                unforgettable dining that leaves a lasting impression.
               </p>
               {/* button and call */}
               <div className="flex  items-center mt-8">
@@ -63,22 +65,51 @@ const About = () => {
               type="radio"
               name="my_tabs_1"
               role="tab"
-              className="tab"
+              className="tab roboto text-black checked:bg-[#B52B1D] checked:text-white"
               aria-label="Experience"
             />
             <div role="tabpanel" className="tab-content p-10">
-              Tab content 2
+              <h1 className="text-2xl uppercase">
+                An Unforgettable Culinary Experience
+              </h1>
+              <p className="roboto">
+                The meal was a perfect blend of creativity and flavor, elevating
+                each ingredient into something extraordinary. Every dish was
+                presented with elegance, and each bite was a memorable delight.
+                This was more than just dining; it was a celebration of taste
+                and artistry.
+              </p>
+              {/* button and call */}
+              <div className="flex  items-center mt-8">
+                <div>
+                  <button className="btn rounded-none bg-custom-yellow hover:bg-custom-yellow-dark border-none mr-8 roboto">
+                    ABOUT MORE
+                  </button>
+                </div>
+              </div>
             </div>
 
             <input
               type="radio"
               name="my_tabs_1"
               role="tab"
-              className="tab"
+              className="tab roboto text-black checked:bg-[#B52B1D] checked:text-white"
               aria-label="Contact"
             />
             <div role="tabpanel" className="tab-content p-10">
-              Tab content 3
+              <h1 className="text-2xl uppercase">Contact Us</h1>
+              <p className="roboto">
+                For reservations or inquiries, please reach out via phone or
+                email us. We look forward to creating an exceptional dining
+                experience for you.
+              </p>
+              {/* button and call */}
+              <div className="flex  items-center mt-8">
+                <div className="flex ">
+                  <img src={callAlt} alt="" />
+                  <p className="xl:font-bold text-sm ml-1">+88 3426 739 485</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
