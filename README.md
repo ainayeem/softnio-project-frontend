@@ -1,8 +1,18 @@
-# React + Vite
+# Softnio task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live Site: [Softnio Resturant](https://softnio-resturant.netlify.app/)
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Header section sticky ✅
+- About section have working tab ✅
+- Carousel have autoplay, loop and navigation button ✅
+- Testimonials section with slider ✅
+- Functional form in book table section ✅
+
+## Used Tools
+
+- React Vite
+- Tailwind CSS
+- Daisy UI
+- Email JS
