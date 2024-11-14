@@ -55,8 +55,8 @@ const BookTable = () => {
     };
 
     toast.promise(sendEmail(), {
-      loading: "Sending Message...",
-      success: "Message Sent!",
+      loading: "Booking Table...",
+      success: "Reservation Complete!",
       error: (error) => `Error: ${error}`,
     });
   };
